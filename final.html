@@ -18,7 +18,7 @@
     const scene = new THREE.Scene();
 
     // พื้นหลัง
-    const bgTexture = new THREE.TextureLoader().load('https://basssz111.github.io/Basssz111/final/belfast_sunset_1k.png');
+    const bgTexture = new THREE.TextureLoader().load('https://basssz111.github.io/CG/belfast_sunset_1k.png');
     scene.background = bgTexture;
 
     // Renderer
@@ -60,7 +60,7 @@
     controls.update();
 
     // พื้น
-    const groundTexture = new THREE.TextureLoader().load('https://basssz111.github.io/Basssz111/final/rock_wall_15_diff_1k.jpg');
+    const groundTexture = new THREE.TextureLoader().load('https://basssz111.github.io/CG/rock_wall_15_diff_1k.jpg');
     groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
     groundTexture.repeat.set(8, 8);
     const groundMaterial = new THREE.MeshStandardMaterial({ map: groundTexture, roughness: 0.8 });
@@ -113,12 +113,12 @@
     // โหลด projects
     let ProjectsObject = null;
     const mtlLoader = new THREE.MTLLoader();
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("Projects.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("Projects.obj", (object) => {
         object.scale.set(0.1, 0.1, 0.1);
         object.position.set(-7.2, 0.9, 0.5);
@@ -136,12 +136,12 @@
     });
     // โหลด About Me
     let aboutMeObject = null;
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("aboutme.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("aboutme.obj", (object) => {
         object.scale.set(0.1, 0.1, 0.1);
         object.position.set(-7.2, 1.1, 0.5);
@@ -160,12 +160,12 @@
 
     // โหลด about me info
     let NAMEEObject = null;
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("NAMEE.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("NAMEE.obj", (object) => {
         object.scale.set(0.1, 0.1, 0.1);
         object.position.set(1.34, 1.3, 0);
@@ -183,7 +183,7 @@
     });
 
     const textureLoader = new THREE.TextureLoader();
-        const picTexture = textureLoader.load('https://basssz111.github.io/Basssz111/final/9b081f69-f709-4d1d-a787-786b4066ac74.jpg');
+        const picTexture = textureLoader.load('https://basssz111.github.io/CG/9b081f69-f709-4d1d-a787-786b4066ac74.jpg');
         const geo = new THREE.BoxGeometry(1, 1, 0.1);
         const mat = new THREE.MeshBasicMaterial({ map: picTexture });
         const Mesh = new THREE.Mesh(geo, mat);
@@ -194,12 +194,12 @@
 
     // โหลด back
     let backObject = null;
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("back.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("back.obj", (object) => {
         object.scale.set(0.1, 0.1, 0.1);
         object.position.set(1.56, 1.3, 1.6);
@@ -217,12 +217,12 @@
       });
     });
     let backObject2 = null;
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("back.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("back.obj", (object) => {
         object.scale.set(0.1, 0.1, 0.1);
         object.position.set(1.65, 0.1, 2.6);
@@ -240,12 +240,12 @@
     });
      // โหลด left
     let LeftObject = null;
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("LEFT.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("LEFT.obj", (object) => {
         object.scale.set(0.1, 0.1, 0.1);
         object.position.set(2.1, -0.05, 2.45);
@@ -263,12 +263,12 @@
     });
      // โหลด right
     let RightObject = null;
-    mtlLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+    mtlLoader.setPath("https://basssz111.github.io/CG/");
     mtlLoader.load("RIGHT.mtl", (materials) => {
       materials.preload();
       const objLoader = new THREE.OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.setPath("https://basssz111.github.io/Basssz111/final/");
+      objLoader.setPath("https://basssz111.github.io/CG/");
       objLoader.load("RIGHT.obj", (object) => {
         object.scale.set(0.085, 0.085, 0.085);
         object.position.set(1.2, 0, 2.4);
@@ -347,13 +347,13 @@
                     uLightColor1: { value: new THREE.Color(0xffd27f) },
                     uLightDir2: { value: dirLight.position.clone().normalize() },
                     uLightColor2: { value: new THREE.Color(0xffd27f) },
-                    uMap: { value: new THREE.TextureLoader().load('https://basssz111.github.io/Basssz111/final/gunslinger_baseColor.png')}
+                    uMap: { value: new THREE.TextureLoader().load('https://basssz111.github.io/CG/gunslinger_baseColor.png')}
                 }
             });
 
             const objLoader = new THREE.OBJLoader();
             objLoader.load(
-                'https://basssz111.github.io/Basssz111/final/cowboyFF.obj',
+                'https://basssz111.github.io/CG/cowboyFF.obj',
                 (obj) => {
                     obj.traverse((node) => {
                         if (node.isMesh) {
@@ -370,7 +370,7 @@
             );
     // GLTF Model
     const gltfLoader = new THREE.GLTFLoader();
-    gltfLoader.load('https://basssz111.github.io/Basssz111/final/saloonOBJ.glb', (gltf) => {
+    gltfLoader.load('https://basssz111.github.io/CG/saloonOBJ.glb', (gltf) => {
       const model = gltf.scene;
       model.traverse(c => {
         if (c.isMesh) { c.castShadow = true; c.receiveShadow = true; }
@@ -378,7 +378,7 @@
       model.rotation.y = -Math.PI / 2;
       scene.add(model);
     });
-    gltfLoader.load('https://basssz111.github.io/Basssz111/final/saloonflow.glb', (gltf) => {
+    gltfLoader.load('https://basssz111.github.io/CG/saloonflow.glb', (gltf) => {
       const model = gltf.scene;
       model.traverse(c => {
         if (c.isMesh) { c.castShadow = true; c.receiveShadow = true; }
@@ -387,7 +387,7 @@
       scene.add(model);
     });
     
-    gltfLoader.load('https://basssz111.github.io/Basssz111/final/KUFIX.glb', (gltf) => {
+    gltfLoader.load('https://basssz111.github.io/CG/KUFIX.glb', (gltf) => {
       const model = gltf.scene;
       model.traverse(c => {
         if (c.isMesh) { c.castShadow = true; c.receiveShadow = true; }
@@ -413,7 +413,7 @@
 
     // โหลดโมเดล Cowboy
     gltfLoader.load(
-    'https://basssz111.github.io/Basssz111/final/cowboy/cowboylowscale.glb', // เปลี่ยนเป็นพาธ/URL ของโมเดลของคุณ
+    'https://basssz111.github.io/CG/cowboy/cowboylowscale.glb', // เปลี่ยนเป็นพาธ/URL ของโมเดลของคุณ
     (gltf) => { 
     const model = gltf.scene || gltf.scenes[0];
     model.traverse((node) => { 
@@ -446,7 +446,7 @@
 
     // โหลดโมเดล weed
     gltfLoader.load(
-      'https://basssz111.github.io/Basssz111/final/weed/weedlowscale.glb',
+      'https://basssz111.github.io/CG/weed/weedlowscale.glb',
       (gltf) => {
         const model = gltf.scene || gltf.scenes[0];
         model.traverse((node) => {
